@@ -10,31 +10,42 @@ body{
     width: 100vw;
     height: 100vh;
 }
-.header{
+/* banner del menu  */
+.menu{
     width: 100vw;
     height: 80px;
-    background-color: black;
 
     padding: 0 20px;
 
     color: white;
-    
+    background-color: black;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;   
 }
-.navigation-menu{
-    background-color: orange;
-}
-.item-menu{
-    display: flex;
-    gap: 1rem;
+/* contenedor del menu*/
+.menu-contain{
     list-style: none;
 }
-.logo{
+/* separacion estandar de los elementos  */
+.item{
+    display: flex;
+    gap: 15px;
+}
+
+
+.img-logo{
     width: 80px;
 }
-.img-logo{
-    width: 100%;
+.img-top{
+    width: 50%;
+    height: 100vh;
+    background-color: aqua;
+    background-image: url(../IMAGES/they.png);
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
 }
-/* rehacer bien el menu y principalmente poner las clases de manera general y adecuada para los elementos  */
+
+/* rehacer bien el menu y principalmente poner las clases de manera general y adecuada para los elementos */
