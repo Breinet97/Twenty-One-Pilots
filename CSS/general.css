@@ -10,73 +10,140 @@ body{
     width: 100%;
     height: 100%;
 }
-
-.header{
-    position: relative;
-    width: 100px;
-}
-
 /* banner del menu  */
-.menu{
-    position: absolute;
-    padding: 0 40px;
-    width: 100%;
-    height: 100px;
-    color: white;
-
+.header{
+    
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
 
+    width: 100%;
+    height: 110px;
+
+    /* hace que el header se sobreponga por asi decirlo en un capa superior al body  */
+    position: absolute;
+    
+
+    /* background-color: black; */
+
+    /* hace que el hijo (menu) quede centrado respecto al header */
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;   
 }
-/* contenedor del menu*/
+.menu{
+    width: 96%;
+    height: auto;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
 .menu-contain{
     list-style: none;
+    width: 100%;
+    height: 100px;
     display: flex;
-    font-size: 18px;
+    justify-content: flex-start;
+    align-items: center;
+
 }
-/* separacion estandar de los elementos  */
+.menu-contain > li{
+    padding: 0 .8rem;
+}
+.menu-link{
+    
+    color: white;
+    text-decoration: none;
+    
+}
+.social-media{
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.social-media a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* clase general para varios links o iconos pegados  */
 .item{
-    gap: 15px;
+    gap: 1rem;
     cursor: pointer;
 }
 
-.link{
-    padding: .5rem;
-    color: white;
-    text-decoration: none;
-    
-}
 .logo{
-    width: 80px;
+    position: relative;
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
 }
 .img-logo{
-    width: 100%;
+    
+    position: absolute;
+    /* width: 90px; */
 
+    /* top: 20%; */
+    width: 600px ;
+    top: 200%;
 }
 
+/* contenido principal de la pagina  */
+
+/* usar grid para esto  */
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 .img-top{
-    width: 50%;
+    width: 40%;
     height: 100vh;
     /* background-color: aqua; */
     background-image: url(../IMAGES/they.png);
+    /* background-position: center left 100px; */
     background-position: center;
+
     background-repeat: no-repeat;
-    /* background-size: 125%; */
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-}
+    background-size: 145%;
 
-.social-media{
-    font-size: 30px;
+    z-index: 50;
+
+    /* background-size: cover; */
+}
+/* esto debe ser trabajado con grid pero es una prueba de como se vera  */
+.pruebaxd{
+    width: 60%;
+    height: 100vh;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
     
 }
-.social-media > a {
-    color: white;
-    text-decoration: none;
+.contenedor-prueba{
+    background-color: transparent;
+    width: 58%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-end;
+
     
 }
+.img-prueba{
+    width: 100%;
+}
 
-/* rehacer bien el menu y principalmente poner las clases de manera general y adecuada para los elementos */
