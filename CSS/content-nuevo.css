@@ -1,0 +1,176 @@
+html {
+    scroll-behavior: smooth;
+}
+/* NOTA: hay cierto detalle en el menu que en un futuro seria mejor trabajar con grid o
+se puede mantener con flex que es lo recomendable pero entonces seria mejor agregar esos cambios a la hoja header 
+para lograr una mejor adaptabilidad en moviles porque como asi como esta va saltar un problema de diseño
+Entonces hacer que el tamaño de la letra sea dependiente del ancho de la pantalla para lograr ekl efecto de que segun la pantalla
+se minimize la letra lo haga con el para facilitar la adaptabilidad*/
+
+/* header modificaciones  */
+.header{
+    font-size: 1.4rem;
+    /* modificacion futura font-size: 1.2vw; */
+}
+
+.menu-contain{
+    /* modificacion futura width: 40%; */
+    flex-wrap: wrap;
+}
+.logo{
+    width: 100px;
+}
+
+/* contenido de la pagina  */
+
+/* contenido principal  */
+.main{
+    position: relative;
+    background-color: black;
+    /* border: red 2px solid; */
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+
+}
+.main video{
+    width: 100%;
+    height: 100%; 
+}
+.main-content{
+    position: absolute;
+    top: 0;
+    width: 98%;
+    height: 100%;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-listen{
+    position: relative;
+    top: 30%;
+
+    border: 2px solid #D62420;
+
+    font-size: 18px;
+    text-decoration: none;
+
+    font-family: "Martian Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+
+    color: #D62420;
+    
+    background-color: black;
+    padding: 1rem;
+    transition: .2s ease-in;
+}
+.btn-listen:hover{
+    padding: 1.2rem;
+    font-size: 22px;
+    background-color: black;
+    color: rgba(213, 35, 32, 0.7);
+    border: 1px solid rgba(213, 35, 32, 0.7);
+    transition: .2s ease-in;
+
+}
+.icon{
+    position: relative;
+    top:35%;
+    color:  #D62420;
+    font-size: 80px;
+    animation: mianimacion 3s linear infinite;
+
+}
+
+/* animacion icono  */
+@keyframes mianimacion {
+    0%{
+    
+        font-size: 60px;
+        
+    }
+    25%{
+        
+        font-size: 50px;
+        color: white;
+    }
+    50%{
+    
+        font-size: 60px;
+    }
+    75%{
+        font-size: 50px;
+        color: white;
+    }
+    100%{
+     
+        font-size: 60px;
+    }
+}
+
+.article{
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.section{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px  black;
+    width: 98%;
+    background-image: linear-gradient(rgb(227, 64, 56), rgb(251, 192, 41));
+    padding: 2rem;
+}
+.section-content{
+    display: flex;
+}
+.section-img{
+    border-radius: 10px;
+}
+.section-text{
+    padding: 0 2rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-title{
+    font-family: "Martian Mono", monospace;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+    font-size: 2.5rem;
+    color: black;
+    text-shadow: 3px 3px 3px #D62420;
+}
+.section-text >p{
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 1.2rem;
+    text-align: center;
+}
+.text-name{
+    font-style: italic;
+}
+.text-more{
+    padding-top: 2rem;
+    text-align: center;
+    font-style: italic;
+}
+.lyrics-text{
+    font-weight: 700;
+    padding: 1rem;
+}
+
