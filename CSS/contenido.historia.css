@@ -7,13 +7,12 @@
     
     justify-content: center;
     color: white;
-   
 }
 .main-content{
     width: 98%;
-    background-color: black;
+    /* background-color: black; */
+    background-image: linear-gradient(black, #FFD800, #D62420);
     border-radius: 10px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +21,6 @@
 }
 .main-title{
     padding: 2rem;
-
     color: #FFD800;
     font-family: "Martian Mono", monospace;
     font-weight: 700;
@@ -32,7 +30,7 @@
     text-shadow: 3px 3px 3px #D62420;
 }
 .main-text{
-    padding: 5rem;
+    padding: 2rem 8rem;
     text-align: center;
     text-shadow: 3px 3px 3px #D62420;
 }

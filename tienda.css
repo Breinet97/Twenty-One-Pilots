@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans';
-}
-body{
-    background-image: url(./IMAGES/fondo.jpg);
-    width: fill;
-    height: fill;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 .top-image {
     width: 70%; 
     height: auto; 
@@ -26,14 +14,26 @@ body{
     margin-left: 600px;
 }
 .contenido{
-    max-width: 1200px;
+
+    /* cambio necesario para el header */
+     /* agrege 20px mas  */
+     padding: 130px 0;
+
+
+    /* max-width: 1200px; */
     width: 100%;
-    margin: 40px auto;
+    /* que mierda hace esto aqui !!! */
+    /* margin: 40px auto; */
+
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 .mostrador{
+
+    padding: 4rem;
+
     width: 100%;
     transition: .5s ease;
 }
@@ -45,7 +45,7 @@ body{
     
     
 }
-.logo{
+.logo-m{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -55,16 +55,28 @@ body{
    
     
 }
-.logo-img{
+.logo-img-m{
     height: 280px;
     width: 280px;
 }
 .mostrador .fila .item {
+
+    font-family: "Martian Mono", monospace;
+    font-weight: 700;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
     width: 300px;
-    padding: 30px;
+    padding: 40px;
     height: 400px;
     text-align: center;
-    margin: 0 20px;
+
+    margin: 0 80px;
+
     cursor: pointer;
     border-radius: 10px;
     transition: .3s;
@@ -73,9 +85,6 @@ body{
     color: #ffffff;
     
 }
-
-
-
 
 
 .mostrador .fila .item img{
@@ -158,11 +167,29 @@ body{
 }
 
 .mostrador .fila .item:hover{
-    background-color: yellow;
+    background-color: #FFD800;
     color: black;
+    border: 2px solid black;
 }
 
 /* .mostrador .fila .item:hover{
     background-color: #ffd900;
     color: #000000;
 } */
+
+.btn-buy{
+    padding: .5rem 0;
+    border-radius: 10px;
+    /* background-color: #FFD800; */
+    color:#FFD800 ;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #FFD800;
+}
+.btn-buy:hover{
+    /* background-color: #D62420; */
+    background-color: black;
+    color: white;
+    /* border: 2px solid black; */
+    border: 2px solid black;
+}

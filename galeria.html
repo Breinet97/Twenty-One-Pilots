@@ -6,16 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Galeria de imagenes</title>
+
+    <!-- hoja de estilos del header  -->
+    <link rel="stylesheet" href="./CSS/header.css">
+
+    <!-- hoja de estilos para el contenido  -->
     <link rel="stylesheet" href="galeria.css">
+
+    <!-- hoja css del footer -->
+    <link rel="stylesheet" href="./CSS/footer.css">
+
+    <!-- iconos de boostrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
+    <!-- header  -->
+    <header class="header">
+        <nav class="menu">
+            <!-- menu  -->
+            <ul class="menu-contain item">
+                <!-- nuevo -->
+                <li>
+                    <a class="menu-link" href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="./sub-paginas/nuevo.html">Nuevo</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="./banda.html">Banda</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="./tienda.html">Tienda</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="./sub-paginas/historia.html">Historia</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="#">Galeria</a>
+                </li>
+            </ul>
+            <!-- logo  -->
+            <a class="logo" href="../index.html">
+                <img class="img-logo" src="../IMAGES/logo (1).png" alt="">
+            </a>
+            <ul class="menu-contain social-media item">
+                <li>
+                    <a href="https://www.youtube.com/@twentyonepilots">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/intl-es/artist/3YQKmKGau1PzlVlkL1iodx">
+                        <i class="bi bi-spotify"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/twentyonepilots">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/twentyonepilots">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com/twentyonepilots">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="top">
         <img class="top-image" src="./IMAGES/TWENTY-ONE-PILOTS.png" alt="TWENTY-ONE-PILOTS">   
     </div>
-     
-    
-    
+
     <div class="galeria">
         
         <div class="linea"></div>
@@ -74,13 +143,26 @@
                     <h2>FEP CONCERT</h2>
                 </div>
             </div>
-            
         </div>
     </div>
-    <div class="logo">
-        <img class="logo-img" src="./IMAGES/logo.png" alt="logo">
-    
+
+    <div class="logo-m">
+        <img class="logo-img-m" src="./IMAGES/logo.png" alt="logo">
     </div> 
+
+    <!-- footer  -->
+    <footer class="footer">
+        <section  class="footer-text">
+            <a class="logo" href="#">
+                <img class="img-logo" src="../IMAGES/logo (1).png" alt="">
+            </a>
+            <p>
+                <small> © COPYRIGHT 2024 FBR AND TØP</small>
+            </p>
+            <p><small> Esta pagina fue hecha para la asignatura de Programacion Avanzada.</small></p>
+            <p><small> Desarrollada por: Breyner Arley y Andres Mayorga</small></p>
+        </section>  
+    </footer>
 </body>
 
 </html>

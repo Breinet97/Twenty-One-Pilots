@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
 *{
     padding: 0;
-    margin: 0;
-    font-family: 'Open Sans'
-   
 }
 body{
     background-image: url(./IMAGES/fondo.jpg);
@@ -13,7 +10,19 @@ body{
     background-repeat: no-repeat;
 }
 
+/* lo de antes esta todo raro xd  */
+
+/* cambio  */
+.header{
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .top {
+
+    /* cambio necesario para el header */
+    padding: 110px 0;
     display: flex;
     justify-content: center;
   }
@@ -91,16 +100,19 @@ body{
     height:100%;
     cursor: pointer;
 }
-.logo{
+/* logo mayo  */
+.logo-m{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    
 }
-.logo-img{
+.logo-img-m{
     height: 280px;
     width: 280px;
 }
+
 @media screen and (max-width:1000px){
     .contenedor-imagenes{
         width: 95%;
